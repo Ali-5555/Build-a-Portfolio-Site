@@ -1,0 +1,147 @@
+/*=====================
+=======================
+    TABLE OF CONTENT
+=======================
+[C01] Typography
+[C02] Colors
+[C03] Images
+[C04] Layout
+    Header
+    Main
+    Cards Sections
+    Cards
+[C05] Media Queries 
+=======================
+=====================*/
+
+/* ========================================================================== */
+
+/*=====================
+    [C01] Typography 
+=====================*/
+h1,
+h2,
+h3,
+p {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.header-text {
+    text-align: right;
+}
+
+.header-text-p {
+    font-size: 25px;
+}
+
+/*=====================
+    [C02] Colors 
+=====================*/
+h1,
+h3,
+p {
+    color: #2d3c49;
+}
+
+h2,
+.header,
+.card-description {
+    color: #7d97ad;
+    border-bottom: #7d97ad;
+}
+
+/*=====================
+    [C03] Images 
+=====================*/
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.logo {
+    width: 150px;
+}
+
+/*=====================
+    [C04] Layout 
+=====================*/
+    /* Main div */
+.main-div {
+    padding: 0 20px;
+}
+    /*Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px;
+    margin-bottom: 30px;
+}
+
+.header-text-p {
+    margin-top: -40px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+    /*Main*/
+.main-img {
+    margin-bottom: 50px;
+}
+    /*Cards Sections*/
+.card-section {
+    display: flex;
+}
+    /* Cards */
+.card-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+.card-section-header {
+    margin-bottom: -30px;
+}
+
+.card-description {
+    margin: -40px 0 50px;
+}
+
+.card-middle {
+    margin: 0 20px;
+}
+
+/*=====================
+    [C05] Media Queries  
+=====================*/
+@media screen and (max-width: 700px) {
+    .card-section {
+        flex-wrap: wrap;
+    }
+    
+    .card-middle {
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+}
